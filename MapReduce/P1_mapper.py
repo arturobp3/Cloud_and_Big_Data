@@ -7,7 +7,7 @@ for line in sys.stdin:
     line = re.sub( r'^\W+|\W+$', '', line )
     wordsList = re.split(r"\W+", line)
 
-    if(word in wordsList):
+    if word in wordsList:
         print(line)
 
 
