@@ -6,7 +6,7 @@ word = sys.argv[1]
 conf = ps.SparkConf().setMaster("local[4]").setAppName("p1_spark")
 sc = ps.SparkContext(conf=conf)
 
-textPath = 'input.txt'
+textPath = '../../Software/input.txt'
 textRDD = sc.textFile(textPath)
 
 grep = textRDD\

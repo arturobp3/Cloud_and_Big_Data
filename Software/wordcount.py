@@ -12,4 +12,4 @@ result = words.map(lambda word: (str(word.lower()).translate(None,string.punctua
 
 aggreg1 = result.reduceByKey(lambda a, b: a+b)
 
-aggreg1.saveAsTextFile("output.txt")
+aggreg1.count("localhost:4040")
